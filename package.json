@@ -1,0 +1,26 @@
+{
+  "name": "mapache-server",
+  "version": "1.0.0",
+  "description": "Mapache server for serving mock data and indoor maps",
+  "main": "app.js",
+  "scripts": {
+    "test": "haha no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiga/mapache-server.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Sergio García Villanueva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiga/mapache-server/issues"
+  },
+  "homepage": "https://github.com/sergiga/mapache-server#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

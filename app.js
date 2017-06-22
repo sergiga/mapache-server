@@ -1,16 +1,14 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var mock = require('./mapache-data/data.js');
+var mapache = require('./mapache');
+
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.get('/mapache', function (req, res) {
-    res.setHeader('Content-Type', 'application/json');
-    res.send(mock);
-});
+app.use('/mapache', mapache);
 
 app.use(express.static('public'));
 

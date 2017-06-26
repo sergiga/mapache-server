@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var mapache = require('./mapache');
+var mapache = require('./controllers/mapache');
 
 
 app.get('/', function (req, res) {

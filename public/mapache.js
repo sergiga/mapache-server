@@ -8155,7 +8155,7 @@ var MapDecorator = function (_Decorator) {
         var _this = _possibleConstructorReturn(this, (MapDecorator.__proto__ || Object.getPrototypeOf(MapDecorator)).call(this, component, node));
 
         _this._crs = data.map.crs;
-        _this._minZoom = 0, _this._maxZoom = _this._crs === 'outdoor' ? 18 : 6, _this._height = data.map.height;
+        _this._minZoom = data.map.minZoom || 0, _this._maxZoom = data.map.maxZoom || (_this._crs === 'outdoor' ? 18 : 6), _this._height = data.map.height;
         _this._width = data.map.width;
         _this._floors = data.map.floors;
         _this._layers = [];
